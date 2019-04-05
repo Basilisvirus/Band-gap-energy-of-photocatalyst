@@ -7,7 +7,7 @@ import constants as const
 ''' seperates column 1 (wavelength) from the two columns, returns the col 1 in float form '''
 def seperate_col1():
 	#open the file with the two columns 
-	data = open("/home/basilisvirus/Desktop/working/python workspace/Eg/data_/data", "r")
+	data = open("/home/basilisvirus/Desktop/working/python workspace/Band-gap-energy-of-photocatalyst/data_/data", "r")
 
 	#initializing the arrays x,y
 	x=[]
@@ -18,12 +18,6 @@ def seperate_col1():
 		ai= (ai)*(10)**(-9)	#[m] transforming the wavelength in meters
 
 		x.append(ai) #append the var ai to x list
-		
-	print("example of wavelength values: ")
-	print(x[0])
-	print("with type: ")
-	print(type(x[0]))
-	print("\n")
 
 	return x
 
@@ -33,9 +27,9 @@ def wl_to_ev(wavelength):
 	wl_list = []		
 
 	for l in wavelength: #[nm] for each 
-		e = (const.H * const.C)/(l) #[((eV*s*m/s)/m)=eV] first, we need to convert the lamda to energy. (E)
-		#ev = e / const.EV #now, we divide the e with the energy of one eV to find out the energy in eV (this is needed in cade your h=...joule instead of ...eV
-		wl_list.append(e) #add every result to the list
+		ev = (const.H * const.C)/(l) #[((eV*s*m/s)/m)=eV] first, we need to convert the lamda to energy. (E)
+		#ev = ev / const.EV #now, we divide the e with the energy of one eV to find out the energy in eV (this is needed in cade your h=...joule instead of ...eV)
+		wl_list.append(ev) #add every result to the list
 
 	return wl_list
 

@@ -17,7 +17,7 @@ import numpy as np
 
 def double_col_graph():
 	#open the file with the two columns 
-	data = open("/home/basilisvirus/Desktop/working/python workspace/Eg/data_/data", "r")
+	data = open("/home/basilisvirus/Desktop/working/python workspace/Band-gap-energy-of-photocatalyst/data_/data", "r")
 
 	#initializing the arrays x,y
 	x=[]
