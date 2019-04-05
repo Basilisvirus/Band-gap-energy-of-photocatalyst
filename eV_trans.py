@@ -7,7 +7,7 @@ import constants as const
 ''' seperates column 1 (wavelength) from the two columns, returns the col 1 in float form '''
 def seperate_col1():
 	#open the file with the two columns 
-	data = open("/home/basilisvirus/Desktop/working/python workspace/Band-gap-energy-of-photocatalyst/data_/data", "r")
+	data = open("data", "r")
 
 	#initializing the arrays x,y
 	x=[]

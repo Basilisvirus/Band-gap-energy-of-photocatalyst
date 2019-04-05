@@ -6,7 +6,7 @@ output: % of each measured intensity (2nd col), based on the maximum value of in
 '''Calculate the maximum value of the column 2 (light intensity) in a file, return column and maximim value'''
 def seperate_col2_and_max():
 	#open the file with the two columns 
-	data = open("/home/basilisvirus/Desktop/working/python workspace/Band-gap-energy-of-photocatalyst/data_/data", "r")
+	data = open("data", "r")
 
 	#initializing the arrays x,y
 	y=[]
