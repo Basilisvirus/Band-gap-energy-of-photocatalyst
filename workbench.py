@@ -97,14 +97,12 @@ plt.plot(relationship_2 ,relationship_1) #plot the result, horizontal axis is xi
 plt.xlabel('h*f [eV]')
 plt.ylabel('sqrt(k*h*f) [sqrt(eV)]')
 
+
 #graph the original values
 plt.subplot(122)
 plt.plot(z,percentage_array) #plot the result, horizontal axis is xi and vertical is yi //plt.plot(z, w, 'ro') for dots
 plt.xlabel('wavelength [nm]')
 plt.ylabel('light intensity [%], max raw value:' +str(maxim_found)) 
 
-
 plt.show() #show the result
-
-
 

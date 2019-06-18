@@ -37,4 +37,3 @@ def wl_to_ev(wavelength):
 '''==========================MAIN=============================='''
 #result_l = seperate_col1()
 #energy_ev = wl_to_ev(result_l)
-

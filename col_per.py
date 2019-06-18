@@ -28,7 +28,7 @@ def seperate_col2_and_max():
 def calc_per(maxim,lista):
 	per_list=[]
 	for block in lista:
-		per = block/maxim #returns the percentage between 0 and 1, if you dont multiply *100.(if values from 0 to 100 are needed, multiply the block*100)	
+		per = (block/maxim) #returns the percentage between 0 and 1, if you dont multiply *100.(if values from 0 to 100 are needed, multiply the block*100)	
 		per_list.append(per)
 		
 	return per_list
@@ -38,11 +38,3 @@ def calc_per(maxim,lista):
 
 #array, maxim_found = seperate_col2_and_max()
 #percentage_array= calc_per(maxim_found, array)
-
-
-
-
-
-
-
-
