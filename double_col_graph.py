@@ -17,7 +17,7 @@ import numpy as np
 
 def double_col_graph():
 	#open the file with the two columns 
-	data = open("data", "r")
+	data = open("data", "r") #remember to delete the empty lines in the data
 
 	#initializing the arrays x,y
 	x=[]
